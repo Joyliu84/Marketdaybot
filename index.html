@@ -73,15 +73,17 @@
       Shining through the city with a little funk and soul
       Light it up like dynamite, whoa oh oh</div>
     <div class="chat-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
+      <div  class="form-container">
         <h1>Chat</h1>
-    
+        <div id="Message_list" class="msghistory"></div>
         <label for="msg"><b>Message</b></label>
-        <textarea class="typemessage" placeholder="Type message.." name="msg" required></textarea>
+        <textarea id="input_field" class="typemessage" placeholder="Type message.." name="msg" required></textarea>
     
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
+        <div class="col-12">
+        <button id="send_button" class="btn col-6">Send</button>
+        <button type="button" class="btn cancel col-6" onclick="closeForm()">Close</button>
+      </div>
+    </div>
     </div>
     <script src="scripts/scripts.js"></script>
 </body>
